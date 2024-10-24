@@ -1,6 +1,8 @@
 /* Inter Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Common Shared Style */
+
 * {
     padding: 0;
     margin: 0;
@@ -14,6 +16,23 @@ body {
     max-width: 1120px;
     margin: 0 auto;
 }
+
+.btn {
+    display: flex;
+    padding: 1rem 2.5rem;
+    justify-content: center;
+    color: #fff;
+    border: 1px solid #FFF;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-active {
+    background: #E6533C;
+    border: 1px solid #E6533C;
+}
+
 
 /* Header Section */
 #header {
@@ -111,7 +130,7 @@ body {
     gap: 14px;
 }
 
-.hero-banner .banner-content .btn-group .btn {
+.btn {
     display: flex;
     padding: 1rem 2.5rem;
     justify-content: center;
@@ -122,7 +141,7 @@ body {
     font-weight: 600;
 }
 
-.hero-banner .banner-content .btn-group .btn-active {
+.btn-active {
     background: #E6533C;
     border: 1px solid #E6533C;
 }
@@ -134,6 +153,7 @@ body {
 
 .hero-banner .banner-img img {
     max-width: 100%;
+    vertical-align: -webkit-baseline-middle;
 }
 
 .video {
@@ -276,6 +296,165 @@ body {
     letter-spacing: 0.3px;
 }
 
+/*Run Extra Mile Style */
+#run-extra-mile {
+    background-color: #000000;
+    color: #fff;
+}
+
+.run-extra-mile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222222;
+    column-gap: 20rem;
+    border-radius: 1.2rem;
+    padding: 30px 20px;
+}
+
+.run-content {
+    width: 30%;
+    padding-left: 30px;
+}
+
+.run-content-title {
+    color: #FFF;
+    font-size: 2.4rem;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.run-content p {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.3px;
+    margin-bottom: 1.4rem;
+}
+
+.run-content .btn-active {
+    width: 10rem;
+}
+
+.run-img {
+    width: 40%;
+}
+
+.run-img img {
+    max-width: 100%;
+    border-radius: 1.2rem;
+
+}
+
+/* BMI Calculator */
+#bmi-calculator {
+    background-color: #000;
+    padding: 90px 0px;
+}
+
+.bmi-section-top {
+    margin-left: 10rem;
+    color: #fff;
+    text-align: left;
+}
+
+.calculator-chart-section {
+    background-color: #222222;
+    padding: 3rem 0;
+}
+
+.calculator-chart {
+    display: flex;
+    gap: 6rem;
+}
+
+.chart-title,
+.calc-title {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+
+.table-chart {
+    margin-top: 2.5rem;
+}
+
+
+.table-chart table th {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.table-chart table td {
+    color: #fff;
+    opacity: 0.5;
+    font-size: 0.9rem;
+}
+
+.table-chart table,
+.table-chart table th,
+.table-chart table td {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-collapse: collapse;
+    height: 3.2rem;
+    padding: 0px 25px;
+    text-align: left;
+}
+
+
+
+.calc-top {
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.calc-title {
+    margin-bottom: 10px;
+}
+
+.calc-top p {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: 0.3px;
+    color: #fff;
+    opacity: 0.5;
+
+}
+
+.form form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+
+.form form input,
+.form form select {
+    padding: 0.8rem 1.5rem;
+    background-color: #383838;
+    border: #383838;
+    border-radius: 0.5rem;
+}
+
+
+.form form select {
+    color: #fff;
+    opacity: 0.3;
+    background-color: rgba(56, 56, 56, 1);
+}
+
+.activity-factor {
+    grid-column: span 2;
+}
+
+.btn-calc {
+    width: 15rem;
+
+}
 
 
 /* Meet Our Team Section Style */
@@ -545,6 +724,59 @@ body {
         grid-template-columns: repeat(1, 1fr);
         gap: 1.2rem;
     }
+
+    .run-extra-mile-content {
+        flex-direction: column;
+        margin: 0px 15px;
+    }
+
+    .run-content {
+        width: 100%;
+        margin-bottom: 1rem;
+        padding-left: 0;
+    }
+
+    .run-img {
+        width: 100%;
+    }
+
+    .bmi-section-top {
+        margin-left: 1rem;
+    }
+
+    .calculator-chart {
+        flex-direction: column;
+    }
+
+    .table-chart {
+        padding: 0px 1rem;
+    }
+
+    .chart-title,
+    .calc-title {
+        font-size: 1rem;
+        padding-left: 1rem;
+    }
+
+    .calc-top {
+        width: 95%;
+    }
+
+    .calc-top p {
+        padding-left: 1rem;
+    }
+
+    .form form {
+        grid-template-columns: repeat(2, 45%);
+        padding-left: 1rem;
+    }
+
+    .btn-calc {
+        padding: 0.8rem;
+        width: 10rem;
+    }
+
+
 }
 
 /* Medium Device */
@@ -591,5 +823,13 @@ body {
     .team-section {
         padding: 10px 20px;
         margin: 5px 20px;
+    }
+
+    .habits {
+        margin: 0 2rem;
+    }
+
+    .run-extra-mile-content {
+        margin: 0 2rem;
     }
 }
