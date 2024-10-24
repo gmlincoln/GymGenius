@@ -300,6 +300,7 @@ body {
 #run-extra-mile {
     background-color: #000000;
     color: #fff;
+    padding: 5.5rem 0px;
 }
 
 .run-extra-mile-content {
@@ -347,6 +348,57 @@ body {
     border-radius: 1.2rem;
 
 }
+
+/* Our Unique Feature Section */
+#unique-features {
+    color: #fff;
+    background-color: #191919;
+    padding: 5.5rem 0px;
+}
+
+.unique-features .section-top {
+    margin-bottom: 2rem;
+
+}
+
+.features {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
+}
+
+.feature .feature-title {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.feature .feature-title img {
+    width: 5rem;
+
+}
+
+
+
+.feature p {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.feature p img {
+    width: 2rem;
+
+}
+
+
 
 /* BMI Calculator */
 #bmi-calculator {
@@ -776,6 +828,13 @@ body {
         width: 10rem;
     }
 
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        margin-bottom: 2rem;
+    }
 
 }
 
@@ -831,5 +890,9 @@ body {
 
     .run-extra-mile-content {
         margin: 0 2rem;
+    }
+
+    .calculator-chart {
+        padding: 0 1rem;
     }
 }
