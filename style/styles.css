@@ -580,8 +580,14 @@ body {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 40% repeat(2, 1fr);
+    grid-template-columns: 40% 50%;
     column-gap: 3rem;
+}
+
+.help-features {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
 }
 
 .footer-content .logo-content .logo {
@@ -836,6 +842,12 @@ body {
         margin-bottom: 2rem;
     }
 
+
+
+    .help-features {
+        flex-direction: column;
+    }
+
 }
 
 /* Medium Device */
@@ -844,8 +856,59 @@ body {
         padding: 30px 20px;
     }
 
+    .hero-banner {
+        margin-top: 1.8rem;
+        flex-direction: column;
+        padding: 0px 10px;
+    }
 
+    .hero-banner .banner-content {
+        width: 90%;
+    }
 
+    .habits {
+        flex-wrap: wrap;
+    }
+
+    .habit {
+        width: 45%;
+    }
+
+    .run-extra-mile-content {
+        column-gap: 10rem;
+        margin: 0px 1.5rem;
+    }
+
+    .run-img img {
+        max-width: 100%;
+    }
+
+    .calculator-chart {
+        flex-direction: column;
+    }
+
+    .chart,
+    .calculator {
+
+        width: 90%;
+        padding-left: 1.5rem;
+
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .logo-content {
+        width: 90%;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .help-features {
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
 }
 
 
@@ -895,4 +958,5 @@ body {
     .calculator-chart {
         padding: 0 1rem;
     }
+
 }
